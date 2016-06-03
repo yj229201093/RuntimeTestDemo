@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		6BB435821D0045FB00F81561 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB435811D0045FB00F81561 /* main.m */; };
 		6BB435851D0045FC00F81561 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB435841D0045FC00F81561 /* AppDelegate.m */; };
-		6BB435881D0045FC00F81561 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB435871D0045FC00F81561 /* MasterViewController.m */; };
-		6BB4358B1D0045FC00F81561 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4358A1D0045FC00F81561 /* DetailViewController.m */; };
 		6BB4358E1D0045FC00F81561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB4358C1D0045FC00F81561 /* Main.storyboard */; };
 		6BB435901D0045FC00F81561 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB4358F1D0045FC00F81561 /* Assets.xcassets */; };
 		6BB435931D0045FC00F81561 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB435911D0045FC00F81561 /* LaunchScreen.storyboard */; };
 		6BB4359E1D0045FC00F81561 /* RuntimeTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4359D1D0045FC00F81561 /* RuntimeTestDemoTests.m */; };
 		6BB435A91D0045FC00F81561 /* RuntimeTestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB435A81D0045FC00F81561 /* RuntimeTestDemoUITests.m */; };
+		6BB435B81D00467400F81561 /* RuntimeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB435B71D00467400F81561 /* RuntimeTestViewController.m */; };
+		6BB435BB1D00468E00F81561 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB435BA1D00468E00F81561 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +40,6 @@
 		6BB435811D0045FB00F81561 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BB435831D0045FB00F81561 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BB435841D0045FC00F81561 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6BB435861D0045FC00F81561 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		6BB435871D0045FC00F81561 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		6BB435891D0045FC00F81561 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		6BB4358A1D0045FC00F81561 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		6BB4358D1D0045FC00F81561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BB4358F1D0045FC00F81561 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BB435921D0045FC00F81561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +50,10 @@
 		6BB435A41D0045FC00F81561 /* RuntimeTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB435A81D0045FC00F81561 /* RuntimeTestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeTestDemoUITests.m; sourceTree = "<group>"; };
 		6BB435AA1D0045FC00F81561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BB435B61D00467400F81561 /* RuntimeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeTestViewController.h; sourceTree = "<group>"; };
+		6BB435B71D00467400F81561 /* RuntimeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeTestViewController.m; sourceTree = "<group>"; };
+		6BB435B91D00468E00F81561 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		6BB435BA1D00468E00F81561 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +106,10 @@
 			children = (
 				6BB435831D0045FB00F81561 /* AppDelegate.h */,
 				6BB435841D0045FC00F81561 /* AppDelegate.m */,
-				6BB435861D0045FC00F81561 /* MasterViewController.h */,
-				6BB435871D0045FC00F81561 /* MasterViewController.m */,
-				6BB435891D0045FC00F81561 /* DetailViewController.h */,
-				6BB4358A1D0045FC00F81561 /* DetailViewController.m */,
+				6BB435B61D00467400F81561 /* RuntimeTestViewController.h */,
+				6BB435B71D00467400F81561 /* RuntimeTestViewController.m */,
+				6BB435B91D00468E00F81561 /* Person.h */,
+				6BB435BA1D00468E00F81561 /* Person.m */,
 				6BB4358C1D0045FC00F81561 /* Main.storyboard */,
 				6BB4358F1D0045FC00F81561 /* Assets.xcassets */,
 				6BB435911D0045FC00F81561 /* LaunchScreen.storyboard */,
@@ -276,9 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BB435851D0045FC00F81561 /* AppDelegate.m in Sources */,
-				6BB435881D0045FC00F81561 /* MasterViewController.m in Sources */,
+				6BB435B81D00467400F81561 /* RuntimeTestViewController.m in Sources */,
+				6BB435BB1D00468E00F81561 /* Person.m in Sources */,
 				6BB435821D0045FB00F81561 /* main.m in Sources */,
-				6BB4358B1D0045FC00F81561 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
